@@ -9,14 +9,14 @@
         margin-right: 25%;
     }
     
-    .container {
+    .noidung {
         display: grid;
         grid-template-columns: 25% 75%;
         grid-gap: 20px;
         border: 1px solid;
         background-image: url(/img/nen1.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
         background-size: 100% 100%;
     }
     

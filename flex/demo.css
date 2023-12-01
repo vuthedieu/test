@@ -1,0 +1,13 @@
+.flex-cocontainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row; */
+    background-color: gray;
+    /* flex-flow: ; */
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 10px;
+    background-color: bisque;
+}

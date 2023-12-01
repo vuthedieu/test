@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-item {
+        background-color: aqua;
+        padding: 20px;
+      }
+
+      .item-header {
+        grid-area: header;
+      }
+
+      .item-menu {
+        grid-area: menu;
+      }
+
+      .item-footer {
+        grid-area: footer;
+      }
+
+      .item-main {
+        grid-area: main;
+      }
+
+      .item-left {
+        grid-area: left;
+      }
+
+      .item-right {
+        grid-area: right;
+      }
+
+      .grid-container {
+        display: grid;
+        gap: 5px;
+        background-color: antiquewhite;
+      }
+
+      @media screen and (min-width: 0px) {
+        .grid-container {
+          display: grid;
+          grid-template-areas: "header  " "menu " "left " "main" "right" "footer ";
+          grid-template-rows: 50px 70px 80px 100px 80px 50px;
+          gap: 5px;
+          background-color: antiquewhite;
+        }
+      }
+
+      @media screen and (min-width: 567px) {
+        .grid-container {
+          display: grid;
+          grid-template-areas: "header header " "menu left " "main right" "footer footer";
+          grid-template-rows: 50px 100px 100px 50px;
+          gap: 5px;
+          background-color: antiquewhite;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .grid-container {
+          display: grid;
+          grid-template-areas: "header header header header" "menu left main right" "menu footer footer footer";
+          grid-template-rows: 100px 100px 100px;
+          gap: 5px;
+          background-color: antiquewhite;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item-header">header</div>
+      <div class="grid-item item-menu">menu</div>
+      <div class="grid-item item-left">left</div>
+      <div class="grid-item item-main">main</div>
+      <div class="grid-item item-right">right</div>
+      <div class="grid-item item-footer">footer</div>
+    </div>
+  </body>
+</html>

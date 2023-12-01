@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.item1 {
+    background-color: antiquewhite;
+}
+
+
+/* .item1 tr:hover {
+    background-color: bisque;
+} */
+
+tr:hover {
+    background-color: bisque;
+}
+
+div:hover {
+    color: antiquewhite;
+}

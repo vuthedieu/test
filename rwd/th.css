@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.image {
+    float: left;
+}
+
+.gallery:hover {
+    border: 1px solid black;
+}
+
+p {
+    text-align: center;
+}
+
+.gallery {
+    border: 1px solid gray;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width:700px) {
+    .image {
+        padding: 5px;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .image {
+        padding: 5px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .image {
+        padding: 5px;
+        width: 100%;
+    }
+}
