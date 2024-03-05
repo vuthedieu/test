@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ogani</title>
     <script src="https://kit.fontawesome.com/2a290a281a.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -13,16 +13,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="script.js">
+    <script src="path/to/owl.carousel.js"></script>
 </head>
 <!-- <div>
     <i class="fa fa-heart"></i>
   </div> -->
 
 <body>
+
     <header class="header">
-        <div class=" header_mr">
+        <div class=" header_mr ">
             <div class="row ">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light color_header">
+                <nav class="navbar navbar-expand-lg navbar-light color_header">
                     <div class="container-fluid">
                         <div class="col-lg-3">
                             <div class="header__logo">
@@ -31,23 +34,23 @@
                         </div>
                         <div class="collapse navbar-collapse col-lg-6 menu_header" id="">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">HOME</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link active" href="./index.html">HOME</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">SHOP</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link color_dropdown " href="#" id="" data-bs-toggle="" aria-expanded="">
-                PAGES
-              </a>
+                                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
+    PAGE
+  </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Shop Details</a></li>
+                                        <li><a class="dropdown-item" href="./shopdetails.html">Shop Details</a></li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Shoping Cart</a>
+                                            <a class="dropdown-item" href="#./shopingcart.html">Shoping Cart</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Check Out</a>
+                                            <a class="dropdown-item" href="./checkout.html">Check Out</a>
                                         </li>
                                         <LI>
                                             <a class="dropdown-item" href="#">Blog Details</a>
@@ -94,31 +97,99 @@
                             </ul>
 
                         </div>
-                        <!-- <div class="header__top__right__auth ">
-                <a href="# "><i class="fa fa-user "></i> Login</a>
-            </div> -->
-                        <!-- <div class="col-lg-3 collapse navbar-collapse ">
-                <div class="header__cart navbar-nav ">
-                    <ul>
-                        <li class="nav-item "><a href="# "><i class="fa fa-heart "></i> <span>1</span></a></li>
-                        <li class="nav-item "><a href="# "><i class="fa fa-shopping-bag "></i> <span>3</span></a></li>
-                    </ul>
-                    <div class="header__cart__price ">item: <span>$150.00</span></div>
-                </div>
-            </div> -->
+
                     </div>
                 </nav>
+                <!-- <div class="humberger__open">
+                    <i class="fa fa-bars"></i>
+                </div> -->
             </div>
+
+        </div>
+        <div id="menuBtn">
+            <i class="fa fa-bars" id="menu"></i>
+        </div>
+
+
+        <div id="sideNav">
+
+            <nav>
+                <div class="sideNav__logo">
+                    <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+                </div>
+
+                <div class="navmenu">
+
+
+
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+
+
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    SHOP
+  </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="./shopdetails.html">Shop Details</a></li>
+                                <li><a class="dropdown-item" href="./shopingcart.html">Shoping Cart</a></li>
+                                <li><a class="dropdown-item" href="./checkout.html">Check Out</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li><a href="#testimonial">BLOG</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                        <li>
+                            <a href="#footer">LOGIN</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- < class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu-icon">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fa fa-heart "></i> <span class="span_icon">1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="# ">
+                            <i class="fa fa-shopping-bag "></i> <span class="span_icon ">3</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active " href="# ">
+                            <div class="header__cart__price ">item: <span>$150.00</span></div>
+                        </a>
+                    </li>
+
+
+                     <li class="nav-item ">
+                        <a class="nav-link active " href="# ">
+                            <i class="fa fa-user "></i> <span>login</span>
+                        </a>
+
+                    </li> -->
+
+
+
+
+            </nav>
         </div>
 
     </header>
+
+
+    </section>
 
     <!-- Categories Section End -->
     <section class="menu ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-3 ">
-                    <div class="categories ">
+                    <div class="categories  ">
                         <div class="categories__all ">
                             <i class="fa fa-bars "></i>
                             <span>All departments</span>
@@ -138,7 +209,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9 ">
+                <div class="col-lg-9 col-xs-12 rps">
 
                     <div class="search ">
                         <div class="search__form ">
@@ -161,7 +232,7 @@
                             </div>
 
                         </div>
-                        <div class="item set-bg ">
+                        <div class="item set-bg menuitem ">
                             <div class="text ">
                                 <span>FRUIT FRESH</span>
                                 <h2>Vegetable <br />100% Organic</h2>
@@ -176,6 +247,7 @@
         </div>
 
     </section>
+
     <!-- <section class="slidecategories">
         <div class="container">
             <div class="row">
@@ -214,10 +286,10 @@
             </div>
         </div>
     </section> -->
-    <section class="featured spad ">
+    <section class="featured spad featured">
         <div class="container ">
             <div class="row ">
-                <div class="col-lg-12 ">
+                <div class="col-lg-12 col-xs-12">
                     <div class="section-title ">
                         <h2>Featured Product</h2>
                     </div>
@@ -233,7 +305,7 @@
                 </div>
             </div>
             <div class="row featured__filter ">
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic " data-setbg="">
                             <img src="img/featured/feature-1.jpg" alt="">
@@ -256,7 +328,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-2.jpg" alt="">
@@ -279,7 +351,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-3.jpg" alt="">
@@ -302,7 +374,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-4.jpg" alt="">
@@ -325,7 +397,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-5.jpg" alt="">
@@ -348,7 +420,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-6.jpg" alt="">
@@ -371,7 +443,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-7.jpg" alt="">
@@ -394,7 +466,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="featured__item ">
                         <div class="featured__item__pic ">
                             <img src="img/featured/feature-8.jpg" alt="">
@@ -461,7 +533,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="#" class="latest-product__item owl-carousel">
                                     <div class="latest-product__item__pic">
                                         <img src="img/latest-product/lp-2.jpg" alt="" />
                                     </div>
@@ -470,7 +542,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="#" class="latest-product__item owl-carousel">
                                     <div class="latest-product__item__pic">
                                         <img src="img/latest-product/lp-3.jpg" alt="" />
                                     </div>
@@ -480,7 +552,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="latest-prdouct__slider__item">
+                            <div class="latest-prdouct__slider__item owl-carousel">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
                                         <img src="img/latest-product/lp-1.jpg" alt="" />
@@ -490,7 +562,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="#" class="latest-product__item owl-carousel">
                                     <div class="latest-product__item__pic">
                                         <img src="img/latest-product/lp-2.jpg" alt="" />
                                     </div>
@@ -499,7 +571,7 @@
                                         <span>$30.00</span>
                                     </div>
                                 </a>
-                                <a href="#" class="latest-product__item">
+                                <a href="#" class="latest-product__item owl-carousel">
                                     <div class="latest-product__item__pic">
                                         <img src="img/latest-product/lp-3.jpg" alt="" />
                                     </div>
@@ -578,7 +650,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="latest-product__text">
+                    <div class="latest-product__text latest-product__text3">
                         <h4>Review Products</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
@@ -794,5 +866,27 @@
     </footer>
 
 </body>
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+    var menu = document.getElementById("menu");
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function() {
+        if (sideNav.style.left == "-250px") {
+            sideNav.style.left = "0";
+            menu.src = "images/close.png";
+        } else {
+            sideNav.style.left = "-250px";
+            menu.src = "images/menu.png";
+        }
+    };
+
+    // All animations will take exactly 1000ms
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+    });
+</script>
+
 
 </html>

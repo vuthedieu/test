@@ -2,21 +2,25 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-table {
+label {
+    padding-top: 30px;
+}
+
+.table1 {
     border: 1px solid;
     border-collapse: collapse;
 }
 
-th {
+.table1 th {
     border: 1px solid black;
 }
 
-td {
+.table1 td {
     border: 1px solid black;
 }
 
 .item1 {
-    background-color: antiquewhite;
+    background-color: rgb(127, 126, 125);
 }
 
 
@@ -25,9 +29,9 @@ td {
 } */
 
 tr:hover {
-    background-color: bisque;
+    background-color: rgb(147, 102, 46);
 }
 
 div:hover {
-    color: antiquewhite;
+    color: rgb(147, 102, 46);
 }
